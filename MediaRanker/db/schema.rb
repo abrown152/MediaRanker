@@ -13,13 +13,17 @@
 ActiveRecord::Schema.define(version: 20160803001631) do
 
   create_table "albums", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string  "title"
+    t.string  "description"
+    t.string  "artist"
+    t.integer "rank"
   end
 
   create_table "books", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string  "title"
+    t.string  "description"
+    t.string  "author"
+    t.integer "rank"
   end
 
   create_table "movies", force: :cascade do |t|

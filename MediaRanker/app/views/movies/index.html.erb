@@ -1,1 +1,17 @@
-<p>This is the movies controller.</p>
+<div id="top_movies">
+  <% @all_movies.each do |movie| %>
+  <h2><%= movie.title %> Ranked:<%= movie.rank %></h2>
+  <% end %>
+</div>
+
+<div id="top_books">
+  <% @all_books.each do |book| %>
+  <h2><%= book.title %> Ranked:<%= book.rank %></h2>
+  <% end %>
+</div>
+
+<div id="top_albums">
+  <% @all_albums.each do |album| %>
+  <h2><%= album.title %> Ranked:<%= album.rank %></h2>
+  <% end %>
+</div>
